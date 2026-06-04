@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <!-- Header progress ayat -->
+    <TextView
+        android:id="@+id/tvAyatProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ayat 1 dari 7"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Instruksi -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Susun kata berikut menjadi ayat yang benar"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- RecyclerView untuk daftar kata -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWords"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"/>
+
+    <!-- Area feedback benar/salah -->
+    <TextView
+        android:id="@+id/tvFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="#212121"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:background="#E8F5E9"
+        android:visibility="invisible"/>
+
+    <!-- Tombol Periksa -->
+    <Button
+        android:id="@+id/btnPeriksa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Periksa"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>
