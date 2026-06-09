@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardBackgroundColor="@color/surface_container_lowest"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/outline_variant"
+    app:strokeWidth="1dp"
+    android:layout_marginBottom="@dimen/spacing_stack"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/spacing_md"
+        android:paddingVertical="@dimen/spacing_md">
+
+        <!-- Nomor surah -->
+        <TextView
+            android:id="@+id/tvChapterNumber"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="14sp"
+            android:textColor="@color/on_primary_fixed_variant"
+            android:textStyle="bold"
+            android:background="@drawable/bg_juz_badge"
+            android:layout_marginEnd="@dimen/spacing_md" />
+
+        <!-- Nama surah -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvChapterName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Al-Fatihah"
+                android:textSize="@dimen/text_body_lg"
+                android:textColor="@color/on_surface"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvVerseCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7 Verses"
+                android:textSize="@dimen/text_body_md"
+                android:textColor="@color/on_surface_variant" />
+
+        </LinearLayout>
+
+        <!-- Nama Arab -->
+        <TextView
+            android:id="@+id/tvChapterArabic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الفاتحة"
+            android:textSize="@dimen/text_quran_md"
+            android:textColor="@color/primary"
+            android:fontFamily="serif"
+            android:layoutDirection="rtl" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

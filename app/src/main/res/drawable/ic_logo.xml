@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="72dp"
+    android:height="72dp"
+    android:viewportWidth="72"
+    android:viewportHeight="72">
+
+    <!-- Outer diamond shape — deep emerald -->
+    <path
+        android:fillColor="#003527"
+        android:pathData="M36,4 L68,36 L36,68 L4,36 Z" />
+
+    <!-- Inner diamond — gold accent -->
+    <path
+        android:fillColor="#FED65B"
+        android:pathData="M36,16 L56,36 L36,56 L16,36 Z" />
+
+    <!-- Center diamond — white highlight -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M36,26 L46,36 L36,46 L26,36 Z" />
+
+</vector>

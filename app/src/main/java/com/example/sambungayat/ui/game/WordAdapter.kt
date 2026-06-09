@@ -1,4 +1,4 @@
-package com.example.sambungayat.ui
+package com.example.sambungayat.ui.game
 
 import android.view.LayoutInflater
 import android.view.MotionEvent
@@ -23,8 +23,6 @@ class WordAdapter(
 
     override fun onBindViewHolder(holder: WordViewHolder, position: Int) {
         holder.binding.tvWord.text = words[position]
-
-        // Mulai drag saat user menyentuh item
         holder.binding.root.setOnTouchListener { _, event ->
             if (event.actionMasked == MotionEvent.ACTION_DOWN) {
                 onDragStarted(holder)
@@ -35,7 +33,6 @@ class WordAdapter(
 
     override fun getItemCount(): Int = words.size
 
-    // Dipanggil oleh DragDropCallback saat item berpindah posisi
     fun moveItem(fromIndex: Int, toIndex: Int) {
         val word = words.removeAt(fromIndex)
         words.add(toIndex, word)

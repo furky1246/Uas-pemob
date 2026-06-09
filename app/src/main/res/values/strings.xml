@@ -1,3 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SambungAyat</string>
+    <string name="app_name">Sambung Ayat</string>
+    <string name="tagline">Sign in to continue your Hifz journey.</string>
+    <string name="assalamu_alaikum">Assalamu Alaikum</string>
+    <string name="label_full_name">Full Name</string>
+    <string name="label_email">Email Address</string>
+    <string name="label_password">Password</string>
+    <string name="label_confirm_password">Confirm Password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Create Account</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_quran">Quran</string>
+    <string name="nav_profile">Profile</string>
+    <string name="total_score">Total Score</string>
+    <string name="best_streak">Best Streak</string>
+    <string name="continue_learning">Continue Learning</string>
+    <string name="weekly_progress">Weekly Progress</string>
+    <string name="select_juz">Select Juz</string>
+    <string name="sort_by">SORT BY</string>
+    <string name="logout">Logout Account</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="quran_progress">Quran Progress</string>
+    <string name="days_suffix">days</string>
+    <string name="welcome_back">WELCOME BACK</string>
+    <string name="mulai_sambung_ayat">Mulai Sambung Ayat</string>
+    <string name="periksa">Periksa</string>
+    <string name="ayat_progress">Ayat %1$d dari %2$d</string>
+    <string name="instruksi_game">Drag kata-kata di bawah menjadi ayat yang benar</string>
 </resources>

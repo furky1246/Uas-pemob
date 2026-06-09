@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardBackgroundColor="@color/surface_container_lowest"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/outline_variant"
+    app:strokeWidth="1dp"
+    android:layout_marginBottom="@dimen/spacing_stack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_md">
+
+        <!-- Nomor + share + audio row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/spacing_md">
+
+            <TextView
+                android:id="@+id/tvVerseNumber"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="12sp"
+                android:textColor="@color/on_primary_fixed_variant"
+                android:textStyle="bold"
+                android:background="@drawable/bg_juz_badge" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnAudio"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_play_circle"
+                app:tint="@color/primary"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="4dp" />
+
+        </LinearLayout>
+
+        <!-- Teks Arab -->
+        <TextView
+            android:id="@+id/tvArabic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layoutDirection="rtl"
+            android:text=""
+            android:textSize="@dimen/text_quran_lg"
+            android:textColor="@color/on_surface"
+            android:fontFamily="serif"
+            android:lineSpacingMultiplier="1.8"
+            android:layout_marginBottom="@dimen/spacing_md" />
+
+        <!-- Tafsir (collapsible) -->
+        <TextView
+            android:id="@+id/tvTafsir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_body_md"
+            android:textColor="@color/on_surface_variant"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/spacing_sm" />
+
+        <!-- Tombol lihat tafsir -->
+        <TextView
+            android:id="@+id/btnToggleTafsir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEE TAFSIR"
+            android:textSize="@dimen/text_label_caps"
+            android:textColor="@color/primary"
+            android:letterSpacing="0.05"
+            android:layout_marginTop="@dimen/spacing_sm" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
